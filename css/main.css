@@ -11,6 +11,7 @@ html {
 
 img {
   width: 100%;
+  display: inline-block;
 }
 
 p {
@@ -48,9 +49,50 @@ a {
     line-height: 1.3;
   }
 
+  p {
+    max-width: 90%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .section-body {
+  display: inline-block;
+  }
+
+  .img-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    float: right;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
   h1,
   p {
-    margin: 0 0 1.3rem;
+    margin: 0 0 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
   }
 
 }
